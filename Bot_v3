@@ -57,6 +57,9 @@ async def echo(ctx, *, minutes=None):  # Normalde echo aynı şeyi döndürmek i
                 if an.hour == datetime.now().hour and an2 == datetime.now().minute:
                     await messagebiter.edit(content="| Süre doldu!")
                     z = 1
+            if an2 == -1:
+                await messagebiter.edit(content="| Süre doldu!")
+                z = 1
             if z == 1:
                 break
             arda = datetime.now().hour
@@ -94,4 +97,4 @@ async def echo(ctx, *, minutes=None):  # Normalde echo aynı şeyi döndürmek i
         await ctx.message.delete()
 
 
-client.run("Token girin")
+client.run("token girin")
