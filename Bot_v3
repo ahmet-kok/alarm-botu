@@ -94,4 +94,4 @@ async def echo(ctx, *, minutes=None):  # Normalde echo aynı şeyi döndürmek i
         await ctx.message.delete()
 
 
-client.run("ODMyMjEwMjIyODI3MzA3MDM4.YHgeKg.9ZtGeRJT0WPRtgHfCeg3bCsklKs")
+client.run("Token girin")
